@@ -10,7 +10,7 @@
     <repo>https://github.com/stephenkeep/com.stephenkeep.checksum.git</repo>
 
     <js-module src="www/checksum.js" name="checksum">
-        <clobbers target="checksum" />
+        <clobbers target="window.Checksum" />
     </js-module>
 
     <!-- android -->
