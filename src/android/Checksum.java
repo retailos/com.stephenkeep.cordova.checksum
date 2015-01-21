@@ -9,6 +9,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.net.URI;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -51,7 +52,8 @@ public class Checksum extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         
         String path = args.getString(0);
-        File file = new File(path);
+        URI fileURL = new URI(path);
+        File file = new File(fileURL);
         
         String md5 = calculateMD5(updateFile);
         JSONObject r = new JSONObject();
