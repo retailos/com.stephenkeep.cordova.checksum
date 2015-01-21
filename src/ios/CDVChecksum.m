@@ -15,7 +15,7 @@
 - (void)MD5:(CDVInvokedUrlCommand*)command {
     
     NSString *path = [command.arguments objectAtIndex:0];
-    NSData *data = [NSData dataWithContentsOfFile:path];
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:path]];
     
     if (data) {
         

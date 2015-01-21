@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.stephenkeep.checksum"
+    id="com.stephenkeep.cordova.checksum"
     version="0.1">
     <name>Checksum</name>
     <description>Cordova Checksum Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,checksum</keywords>
-    <repo>https://github.com/stephenkeep/com.stephenkeep.checksum.git</repo>
+    <repo>https://github.com/stephenkeep/com.stephenkeep.cordova.checksum.git</repo>
 
     <js-module src="www/checksum.js" name="checksum">
         <clobbers target="window.Checksum" />
@@ -17,11 +17,11 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Checksum" >
-                <param name="android-package" value="org.apache.cordova.checksum.Checksum"/>
+                <param name="android-package" value="com.stephenkeep.cordova.checksum.Checksum"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/Checksum.java" target-dir="src/org/apache/cordova/checksum" />
+        <source-file src="src/android/Checksum.java" target-dir="src/com/stephenkeep/cordova/checksum" />
     </platform>
 
     <!-- ios -->
