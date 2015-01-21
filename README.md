@@ -1,1 +1,1 @@
-# com.stephenkeep.checksum
+# Cordova Checksum Plugin
