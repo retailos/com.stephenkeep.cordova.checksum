@@ -4,11 +4,15 @@ var argscheck = require('cordova/argscheck'),
     exec = require('cordova/exec'),
     cordova = require('cordova');
 
-channel.createSticky('onCordovaInfoReady');
+channel.createSticky('onCordovaChecksumReady');
 // Tell cordova channel to wait on the CordovaInfoReady event
-channel.waitForInitialization('onCordovaInfoReady');
+channel.waitForInitialization('onCordovaChecksumReady');
 
-function Checksum() {}
+function Checksum() {
+  channel.onCordovaReady.subscribe(function() {
+    channel.onCordovaChecksumReady.fire();
+  });
+}
 
 /**
  * @param {Function} successCallback The function to call when the heading data is available
