@@ -1,0 +1,22 @@
+{
+  "name": "com.stephenkeep.cordova.checksum",
+  "version": "0.1",
+  "description": "Cordova checksum",
+  "cordova": {
+    "id": "com.stephenkeep.cordova.checksum",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stephenkeep/com.stephenkeep.cordova.checksum"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Red Ant",
+  "license": "Apache 2.0"
+}
