@@ -1,6 +1,6 @@
 {
   "name": "com.stephenkeep.cordova.checksum",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "Cordova checksum",
   "cordova": {
     "id": "com.stephenkeep.cordova.checksum",
